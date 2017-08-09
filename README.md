@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample rails app for import a csv file into database.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: ruby-2.4.0
+
+How it works?
 
 * System dependencies
 
-* Configuration
+Linux system
+
+* Installation
+
+Open bash console and write:
+
+git clone https://github.com/gkobluk/csv_import.git
+
+and then
+
+cd csv_import
+bundle install
+
 
 * Database creation
 
-* Database initialization
+rake db:create
+rake db:migrate
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+rake spec
 
-* Deployment instructions
+* Run app
 
-* ...
+rails c
+CsvService.import_people

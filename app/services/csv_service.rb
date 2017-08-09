@@ -1,6 +1,6 @@
 class CsvService
 
-  CSV_FILE='./tmp/people.csv'
+  CSV_FILE='./people.csv'
 
 
   def self.import_people
