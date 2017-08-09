@@ -2,17 +2,18 @@
 
 This is a sample rails app for import a csv file into database.
 
-Things you may want to cover:
+#### Ruby version ####
 
-* Ruby version: ruby-2.4.0
+ruby-2.4.0
 
-How it works?
+#### System dependencies ####
 
-* System dependencies
+* Linux system
+* rvm
+* ruby
+* rails
 
-Linux system
-
-* Installation
+#### Installation ####
 
 Open bash console and write:
 
@@ -21,19 +22,27 @@ git clone https://github.com/gkobluk/csv_import.git
 and then
 
 cd csv_import
+
 bundle install
 
 
-* Database creation
+
+#### Database creation ####
 
 rake db:create
+
 rake db:migrate
 
-* How to run the test suite
+#### How to run the test suite ####
+
+cd csv_import
 
 rake spec
 
-* Run app
+#### How it works? ####
+
+cd csv_import
 
 rails c
+
 CsvService.import_people
